@@ -169,10 +169,10 @@ var Bingo = new function () {
     } 
 
     this.CantarBolilla = function (Bolilla) {
-        /*var DescBolilla = Bolilla.toString();
+        var DescBolilla = Bolilla.toString();
         if (DescBolilla.length == 1) { DescBolilla = ', 0, ' + DescBolilla } else {
             DescBolilla = ', ' + Bolilla.toString().substring(0, 1) + ', ' + Bolilla.toString().substring(1, 1);
-        }  */   
+        }     
         //alert(DescBolilla)
         Bingo.objVoz.text = Bolilla + DescBolilla;        
         speechSynthesis.speak(Bingo.objVoz);
